@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>    
+  <script type="text/javascript">
+    var flag=false;
+    $(function() {
+
+      $('#menu').click(function() {
+        flag=!flag;
+        if(flag)
+        {
+          $('.navbar a').css({'display':'block'});
+          $('.dropdown').css({'display':'block'});
+          $('.dropbtn').css({'display':'block'});
+
+
+        }
+        else
+        {
+          $('.navbar a').css({'display':'none'});
+          $('.dropdown').css({'display':'none'});
+          $('.dropbtn').css({'display':'none'});
+          $('.data').css({'margin-top':'10px'});
+        }
+      });
+
+    });
+
+  </script>
+</head>
+<header>
+  <div class="header_nav">
+    <a class="fa fa-shopping-cart" aria-hidden="true" href="#" style="font-size: 30px;"></a>
+
+    <a>Amrutha-Jayaram</a>
+    <form>
+      <input type="text" name="search" placeholder="Search..">
+    </form>
+  </div>
+</header>
+<body>
+ <div class="navbar">
+  <h1>Amy</h1>
+  <div class="toggle">
+    <i class="fa fa-bars menu" aria-hidden="true" id="menu"></i>
+  </div>
+  <a href="#">Home</a>
+  <a href="#">Profile</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+</div>
+<div class="container">
+
+  <div class="slideshow-container">
+
+    <div class="mySlides ">
+      <img src="Img/bg1.jpg" style="width:100%">
+
+    </div>
+
+    <div class="mySlides ">
+      <img src="Img/bg2.jpg" style="width:100%">
+
+    </div>
+
+    <div class="mySlides ">
+      <img src="Img/bg3.jpg" style="width:100%">
+
+    </div>
+
+  </div>
+  <div class="data">
+    <h3>Mobile Shop</h3>
+    <p>Pixel and Pixel XL are Android smartphones designed, developed and marketed by Google. They were announced during a press event on October 4, 2016, and serve as the first smartphones in the Google Pixel hardware line. The Google Pixel and Pixel XL are currently carried by Verizon and Project Fi</p>
+  </div>
+
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="Img/pixel.jpeg">
+        <img src="Img/pixel.jpeg" alt="Trolltunga Norway" width="300" height="200">
+      </a>
+      <div class="desc">Pixel 2</div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="Img/pixel.jpeg">
+        <img src="Img/pixel.jpeg" alt="Trolltunga Norway" width="300" height="200">
+      </a>
+      <div class="desc">Pixel 2</div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="Img/pixel.jpeg">
+        <img src="Img/pixel.jpeg" alt="Trolltunga Norway" width="300" height="200">
+      </a>
+      <div class="desc">Pixel 2</div>
+    </div>
+  </div>
+  <div class="responsive">
+    <div class="gallery">
+      <a target="_blank" href="Img/pixel.jpeg">
+        <img src="Img/pixel.jpeg" alt="Trolltunga Norway" width="300" height="200">
+      </a>
+      <div class="desc">Pixel 2</div>
+    </div>
+
+  </div>
+</div>
+<div class="clearfix"></div>
+<br/>
+<div class="flex-container">
+  <div id="size">
+
+    <p>
+      <b>Quick Links</b>
+    </p>
+    <p>
+      <u>Home</u>
+    </p>
+    <p>
+      <u>Events</u>
+    </p>
+    <p>
+      <u>Support</u>
+    </p>
+    <p>
+      <u>Contact</u>
+      <p>
+
+      </div>
+      <div id="size">
+        <center>
+
+          <p>
+            <b>Announcements</b>
+          </p>
+          <p>Pixel and Pixel XL are Android smartphones designed, developed and marketed by Google. They were announced during a press event on October 4, 2016, and serve as the first smartphones in the Google Pixel hardware line. The Google Pixel and Pixel XL are currently carried by Verizon and Project Fi
+          </p>
+        </center>
+      </div>
+      <div id="size">
+        <center>
+          <p>
+            <b>Upcoming Product/products</b>
+          </p>
+          <img id="new" src="Img/oneplus.png">
+
+        </center>
+      </div>
+    </div>
+
+    <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";  
+       }
+       slideIndex++;
+       if (slideIndex > slides.length) {slideIndex = 1}    
+
+        slides[slideIndex-1].style.display = "block";  
+    setTimeout(showSlides, 5000); // Change image every 2 seconds
+  }
+</script>
+
+</body>
+</html>
